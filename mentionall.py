@@ -4,7 +4,6 @@ from telethon import TelegramClient, events
 from telethon.sessions import StringSession
 from telethon.tl.types import ChannelParticipantsAdmins
 from asyncio import sleep
-from Config import Config
 
 logging.basicConfig(
     level=logging.INFO,
@@ -24,20 +23,6 @@ bot_name = Config.BOT_NAME
 SUDO_USERS = Config.SUDO_USERS
 
 client = TelegramClient('client', api_id, api_hash).start(bot_token=bot_token)
-
-anlik_calisan = []
-
-tekli_calisan = []
-
-ozel_list = [1948748468]
-anlik_calisan = []
-grup_sayi = []
-etiketuye = []
-rxyzdev_tagTot = {}
-rxyzdev_initT = {}
-
-
-
 
 
 
